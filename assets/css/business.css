@@ -1,0 +1,495 @@
+@charset "UTF-8";
+
+
+.top {
+  position: relative;
+  /*相対配置*/
+}
+
+.top_title {
+  position: absolute;
+  /*絶対配置*/
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: 0.9vw;
+}
+
+.top_img {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.introduction_heading_title,
+.achievements_heading_title {
+  color: #000;
+  font-size: 2vw;
+  letter-spacing: 0.9vw;
+  font-weight: 100;
+}
+
+.introduction_heading_title-eng {
+  position: relative;
+  color: #000;
+  font-size: 1.27vw;
+  letter-spacing: 0.13vw;
+  font-weight: 100;
+  margin-top: 8px;
+  text-align: left;
+}
+
+
+.introduction_heading_title-eng::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border-bottom: 0.5px solid #000;
+  width: 22vw;
+  margin-top: 30px;
+}
+
+.introductionwrapper {
+  padding: 180px 18% 0 18%;
+}
+
+.sp_img {
+  display: none;
+}
+
+.merchandisewrapper {
+  margin-top: 140px;
+}
+
+.merchandise_arrow {
+  width: 1.3%;
+  height: 1.3%;
+}
+
+.merchandisewrapper>.merchandise:nth-child(n+2) {
+  margin-top: 80px;
+}
+
+.merchandise_container {
+  display: flex;
+  color: #000;
+}
+
+.merchandise_title {
+  font-size: 1.5vw;
+  letter-spacing: 0.15vw;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+.merchandise_text {
+  color: #000;
+  font-size: 1.12vw;
+  letter-spacing: 0.15vw;
+  margin-top: 20px;
+  line-height: 2.3vw;
+}
+
+.mechanical_unordered {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  margin: 200px calc(50% - 50vw) 200px;
+}
+
+.mechanical_list:nth-child(n+2) {
+  margin-left: 15px;
+}
+
+.facility_heading_title-eng::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border-bottom: 0.5px solid #000;
+  width: 22vw;
+  margin-top: 30px;
+  right: 0;
+}
+
+.facility {
+  width: 70%;
+}
+
+.facility_title {
+  margin-right: 40px;
+  text-align: right;
+  margin-bottom: -60px;
+}
+
+.facility_heading_title {
+  color: #000;
+  font-size: 2vw;
+  letter-spacing: 0.9vw;
+  font-weight: 100;
+  margin-right: -13px;
+}
+
+.facility_heading_title-eng {
+  position: relative;
+  color: #000;
+  font-size: 1.27vw;
+  letter-spacing: 0.13vw;
+  font-weight: 100;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.facility_flex {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 320px;
+}
+
+.facility_img {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.slider_img {
+  aspect-ratio: 100/80;
+  /* margin-left: 35px; */
+}
+
+.achievements {
+  padding: 0px 170px 210px;
+  margin-top: 220px;
+  background-color: #f9f9f9;
+}
+
+.achievements_title {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.achievements_heading_title-eng {
+  position: relative;
+  color: #000;
+  font-size: 1.27vw;
+  letter-spacing: 0.13vw;
+  font-weight: 100;
+  margin-top: 8px;
+  text-align: center;
+  margin-left: -16px;
+}
+
+.achievements_heading_title-eng::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border-bottom: 0.5px solid #000;
+  width: 22vw;
+  margin-top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.achievements_unordered {
+  margin-top: 220px;
+  color: #000;
+  list-style: none;
+  font-size: 1.28vw;
+  font-weight: 100;
+  letter-spacing: 0.15vw;
+  line-height: 1.8;
+}
+
+.achievements_list {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.achievements_unordered>.achievements_list:nth-child(n+2) {
+  margin-top: 150px;
+}
+
+.achievements_list_title::after {
+  position: absolute;
+  content: "";
+  width: 0.8px;
+  height: 100px;
+  background-color: #000;
+  top: 50%;
+  right: 76%;
+  transform: translateY(-50%);
+}
+
+.achievements_list_title {
+  text-align: right;
+  width: 20%;
+  display: block;
+}
+
+.achievements_list_text {
+  width: 65%;
+  color: #000;
+  font-size: 1.11vw;
+  font-family: 'ryo-gothic-plusn';
+  font-weight: lighter;
+  line-height: 2.5vw;
+  /* margin-top: 0px; */
+  text-align: left;
+  margin-left: 90px;
+}
+
+
+@media(max-width: 767px) {
+
+  .top {
+    position: relative;
+    /*相対配置*/
+  }
+
+  .top_title {
+    position: absolute;
+    /*絶対配置*/
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    font-style: normal;
+    font-size: 5.3vw;
+    letter-spacing: 0.9vw;
+  }
+
+  .top_img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .introduction_heading_title,
+  .achievements_heading_title {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 3px;
+    /* font-size: 4.8vw; */
+    /* letter-spacing: 0.9vw; */
+    font-weight: 100;
+  }
+
+  .introduction_heading_title-eng {
+    position: relative;
+    color: #000;
+    font-size: 3.27vw;
+    letter-spacing: 0.13vw;
+    font-weight: 100;
+    margin-top: 8px;
+    text-align: left;
+  }
+
+
+  .introduction_heading_title-eng::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 0.5px solid #000;
+    width: 41vw;
+    margin-top: 30px;
+  }
+
+  .introductionwrapper {
+    padding: 135px 5.3% 0 5.3%;
+  }
+
+  .sp_img {
+    display: block;
+    max-width: 502px;
+    margin: 150px auto;
+  }
+
+
+  .merchandisewrapper {
+    margin-top: 135px;
+  }
+
+  .merchandise_arrow {
+    width: 3%;
+    height: 3%;
+  }
+
+  .merchandisewrapper>.merchandise:nth-child(n+2) {
+    margin-top: 90px;
+  }
+
+  .merchandise_container {
+    display: flex;
+    align-items: center;
+    color: #000;
+  }
+
+  .merchandise_title {
+    font-size: 18px;
+    letter-spacing: 0.15vw;
+    font-weight: 100;
+    margin-left: 20px;
+  }
+
+  .merchandise_text {
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 0.15vw;
+    margin-top: 35px;
+    line-height: 32px;
+  }
+
+  .mechanical_unordered {
+    display: none;
+    /* margin-top: 200px; */
+    justify-content: space-between;
+    align-items: center;
+    /* width: 59vw; */
+    /* margin: 200px 30px; */
+  }
+
+  .facility_heading_title-eng::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 0.5px solid #000;
+    width: 22vw;
+    margin-top: 30px;
+    right: 0;
+  }
+
+  .facility {
+    width: 100%;
+    padding-top: 85px;
+  }
+
+  .facility_title {
+    /* width: 30%; */
+    margin-right: 0px;
+    text-align: right;
+    margin-left: 0px;
+    margin-bottom: 0;
+  }
+
+  .facility_heading_title-eng,
+  .achievements_heading_title-eng {
+    position: relative;
+    color: #000;
+    font-size: 3.27vw;
+    letter-spacing: 0.13vw;
+    font-weight: 100;
+    margin-top: 8px;
+    text-align: right;
+  }
+
+  .facility_heading_title {
+    color: #000;
+    font-size: 4.7vw;
+    letter-spacing: 0.9vw;
+    font-weight: 100;
+    margin-right: -6px;
+  }
+
+  .facility_flex {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 330px 30px 0;
+  }
+
+  .facility_img {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .slider_img {
+    aspect-ratio: 100/80;
+    /* margin-left: 35px; */
+  }
+
+  .achievements {
+    padding: 0px 5.3% 210px;
+    margin-top: 230px;
+    background-color: #f9f9f9;
+  }
+
+  .achievements_title {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .achievements_heading_title-eng {
+    position: relative;
+    color: #000;
+    font-size: 3.27vw;
+    letter-spacing: 0.13vw;
+    font-weight: 100;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .achievements_heading_title-eng::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 0.5px solid #000;
+    width: 42vw;
+    margin-top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .achievements_unordered {
+    margin-top: 100px;
+    color: #000;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.15vw;
+    line-height: 1.8;
+  }
+
+  .achievements_list {
+    display: block;
+    position: relative;
+    align-items: center;
+  }
+
+  .achievements_unordered>.achievements_list:nth-child(n+2) {
+    margin-top: 100px;
+  }
+
+  .achievements_list_title::after {
+    position: absolute;
+    content: "";
+    width: 0.7px;
+    height: 33px;
+    background-color: #000;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+  }
+
+  .achievements_list_title {
+    text-align: left;
+    width: auto;
+    position: relative;
+    display: inline-block;
+  }
+
+  .achievements_list_text {
+    width: auto;
+    font-size: 12px;
+    line-height: 32px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+
+}

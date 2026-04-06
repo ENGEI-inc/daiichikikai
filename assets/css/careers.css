@@ -1,0 +1,531 @@
+@charset "UTF-8";
+
+.sp_br {
+  display: none;
+}
+
+.top {
+  position: relative;
+  /*相対配置*/
+}
+
+.top_title {
+  position: absolute;
+  /*絶対配置*/
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: 0.9vw;
+}
+
+.top_img {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.heading {
+  margin: 200px 0;
+}
+
+.careersmain {
+  position: relative;
+  overflow: hidden;
+}
+
+.careersmain::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/dik_bg.png);
+  width: 100%;
+  height: 100%;
+  top: 61vw;
+  right: -54%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.heading_title {
+  color: #000;
+  font-size: 1.3vw;
+  font-weight: 500;
+  letter-spacing: 0.3vw;
+  line-height: 3vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bg_img {
+  position: relative;
+  z-index: -100;
+  top: -37%;
+  left: 16%;
+  width: 84%;
+}
+
+@media(min-width: 768px) {
+.staff.scrolling {
+  overflow-x: scroll;
+}
+}
+@media(max-width: 767px) {
+  .staff.scrolling {
+    overflow-x: unset;
+  }
+  }
+
+.staff_heading_title,
+.careers_heading_title {
+  color: #000;
+  font-size: 2vw;
+  letter-spacing: 0.9vw;
+  font-weight: 100;
+}
+
+.staff_heading_title-eng,
+.careers_heading_title-eng {
+  color: #000;
+  font-size: 1.27vw;
+  letter-spacing: 0.13vw;
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+.staff_heading_title-eng::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border-bottom: 0.5px solid #000;
+  width: 300px;
+  margin-top: 30px;
+  left: 0;
+}
+
+
+
+.staff {
+  margin: 100px 120px 60px;
+}
+
+@media(min-width: 768px) {
+.side-scroll {
+  width: calc(100% - 240px);
+  overflow: hidden;
+}
+}
+
+.side-scroll-list-wrapper {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  margin-top: 100px;
+}
+
+.staff_container.side-scroll-list {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: flex;
+  gap: 0px 200px;
+}
+
+.staff_flex.side-scroll-item {
+  display: flex;
+  width: calc(100vw - 240px);
+  height: auto;
+}
+
+.scroll {
+  width: 10%;
+  margin: 25px 0 0 auto;
+}
+
+.staff_img {
+  width: 40%;
+}
+
+.interview {
+  width: 60%;
+  margin-left: 8%;
+}
+
+
+.staff_flex {
+  height: 100vh;
+  /* 表示領域の高さいっぱいに表示 */
+  transition: opacity 0.5s ease-in-out;
+  /* フェードのアニメーション */
+}
+
+.staff_flex.active {
+  opacity: 1;
+  /* アクティブなセクションをフェードイン */
+}
+
+.interview_list {
+  margin-top: 20px;
+}
+
+.interview_unordered>.interview_list:nth-child(2) {
+  display: flex;
+  margin-top: 15px;
+}
+
+.interview_unordered>.interview_list:nth-child(3) {
+  margin-top: 40px;
+}
+
+.interview_list_title {
+  color: #000;
+  font-size: 1.12vw;
+  letter-spacing: 0.3vw;
+  font-weight: 600;
+}
+
+.interview_list:nth-child(2)>.interview_list_title:nth-child(n+2) {
+  margin-left: 50px;
+}
+
+.man_name {
+  font-size: 1.6vw;
+}
+
+.interview_list_text {
+  color: #000;
+  font-size: 0.91vw;
+  letter-spacing: 0.03vw;
+  /* line-height: 1vw; */
+  font-weight: 100;
+}
+
+.interview_list:nth-child(2)>.interview_list_text {
+  font-size: 1.12vw;
+  margin-left: 20px;
+}
+
+.interview_list:nth-child(n+3)>.interview_list_text {
+  margin-top: 5px;
+  line-height: 2;
+  font-family: ryo-gothic-plusn, toppan-bunkyu-gothic-pr6n, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Helvetica Neue", Arial, Meiryo, sans-serif;
+}
+
+.careers {
+  padding: 20%;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.careers_title {
+  text-align: center;
+}
+
+.careers_heading_title-eng::after {
+  position: absolute;
+  content: '';
+  display: block;
+  border-bottom: 0.5px solid #000;
+  width: 300px;
+  margin-top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.careers_unordered {
+  margin-top: 200px;
+}
+
+.careers_list {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 0.5px solid #d8d8d8;
+  margin-top: 40px;
+}
+
+.careers_list_title {
+  color: #321d1d;
+  font-size: 16px;
+  letter-spacing: 0.13vw;
+  /* font-weight: 600; */
+  width: 30%;
+}
+
+.careers_list_text {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 0.13vw;
+  line-height: 30px;
+  font-weight: 100;
+  width: 70%;
+}
+
+.space1 {
+  margin-left: 10px;
+}
+
+.space2 {
+  margin-left: 10px;
+}
+
+.space3 {
+  margin-left: 10px;
+}
+
+
+
+@media(max-width: 767px) {
+
+  .sp_br {
+    display: block;
+  }
+
+  .top {
+    position: relative;
+    /*相対配置*/
+  }
+
+  .top_title {
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .top_img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .heading {
+    margin-top: 200px;
+  }
+
+  .careersmain {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .careersmain::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/dik_bg.png);
+    width: 100%;
+    height: 100%;
+    top: 61vw;
+    right: -37%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .heading_title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+  .bg_img {
+    position: relative;
+    z-index: -100;
+    top: -37%;
+    left: 16%;
+    width: 84%;
+  }
+
+
+  .staff {
+    margin: 100px 30px 210px;
+  }
+
+
+  .staff_heading_title,
+  .careers_heading_title {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .staff_heading_title-eng,
+  .careers_heading_title-eng {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+
+  .staff_heading_title-eng::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 0.5px solid #000;
+    width: 177px;
+    margin-top: 15px;
+    left: 8%;
+  }
+
+  .staff_flex {
+    display: flex;
+    align-items: center;
+  }
+  .staff_flex:nth-child(n+2) {
+    margin-top: 120px;
+  }
+
+  .scroll {
+    width: 10%;
+    margin: 25px 0 0 auto;
+  }
+
+  .staff_img {
+    width: 100%;
+  }
+
+  .interview {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .staff_container {
+    display: block;
+  }
+
+  .staff_flex {
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    /* フェードのアニメーション */
+  }
+
+  .staff_flex.active {
+    opacity: 1;
+    /* アクティブなセクションをフェードイン */
+  }
+
+  .interview_list {
+    margin-top: 40px;
+    /* width: 100%; */
+  }
+
+  .interview_unordered>.interview_list:nth-child(2) {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .interview_unordered>.interview_list:nth-child(3) {
+    margin-top: 70px;
+  }
+
+  .interview_list_title {
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.3vw;
+    font-weight: 600;
+  }
+
+  .interview_list:nth-child(2)>.interview_list_title:nth-child(n+2) {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+  .man_name {
+    font-size: 18px;
+  }
+
+  .interview_list_text {
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 0.03vw;
+    font-weight: 100;
+    line-height: 0px;
+  }
+
+  .interview_list:nth-child(2)>.interview_list_text {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .interview_list:nth-child(n+3)>.interview_list_text {
+    margin-top: 20px;
+    line-height: 20PX;
+    font-family: ryo-gothic-plusn, toppan-bunkyu-gothic-pr6n, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Helvetica Neue", Arial, Meiryo, sans-serif;
+  }
+
+  .side-scroll-list-wrapper {
+    position: relative;
+    width: 100%;
+    height: 860px;
+    margin-top: 120px;
+    overflow-y: auto;
+  }
+
+  .staff_container.side-scroll-list {
+    position: absolute;
+    top: 10px;
+    display: block;
+    gap: 0px 200px;
+    flex-wrap: nowrap;
+    /* 子要素が折り返されないようにする */
+  }
+
+  .staff_flex.side-scroll-item {
+    display: block;
+    min-width: auto;
+    width: 100%;
+    /* 子要素が自動的に幅を設定できるようにする */
+    height: 100%;
+  }
+
+  .careers {
+    padding: 150px 30px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+  }
+
+  .careers_heading_title-eng::after {
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 0.5px solid #000;
+    width: 198px;
+    margin-top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .careers_unordered {
+    margin-top: 140px;
+  }
+
+  .careers_list {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .careers_list_title {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    width: 100%;
+  }
+
+  .careers_list_text {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .space1 {
+    margin-left: 10px;
+  }
+
+  .space2 {
+    margin-left: 10px;
+  }
+
+  .space3 {
+    margin-left: 10px;
+  }
+
+
+}
