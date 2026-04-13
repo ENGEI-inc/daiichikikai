@@ -132,7 +132,88 @@
         </div>
       </a>
     </section>
-    <section>
+
+<section>
+  <div id="contact" class="contact">
+    <div class="contact_title_container">
+      <h2 class="contact_title">お問い合わせ</h2>
+      <div class="contact_title-eng">Contact</div>
+      <div class="contact_info">
+        当社へのご依頼・ご相談などございましたら、<br class="sp_br">
+        何でもお気軽にお問い合せ下さい。
+      </div>
+    </div>
+
+    <!-- 送信完了メッセージ -->
+    <div id="thanksMessage" style="display:none; text-align:center; margin-top:20px;">
+      <p>お問い合わせありがとうございます。<br>送信が完了しました。</p>
+    </div>
+
+    <!-- 非表示iframe -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <form class="c-form"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeQE5_NTffU88JkEVCeybIKC4cgeHe9WdYxZrqN2_KWcDlNjQ/formResponse"
+      method="POST"
+      target="hidden_iframe"
+      onsubmit="submitted=true;">
+
+      <!-- 氏名（漢字） -->
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-name-sei">氏名（漢字）</label>
+        <div class="c-form__input-wrap">
+          <input name="entry.2005620554" class="c-form__input" id="field-name-sei" type="text" required />
+          <input name="entry.465694198" class="c-form__input" id="field-name-mei" type="text" required />
+        </div>
+      </div>
+
+      <!-- 氏名（カタカナ） -->
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-kana-sei">氏名（カタカナ）</label>
+        <div class="c-form__input-wrap">
+          <input name="entry.1630223541" class="c-form__input" id="field-kana-sei" type="text" required />
+          <input name="entry.1182498894" class="c-form__input" id="field-kana-mei" type="text" required />
+        </div>
+      </div>
+
+      <!-- 電話番号 -->
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-tel">電話番号</label>
+        <input name="entry.1166974658" class="c-form__input" id="field-tel" type="tel" required />
+      </div>
+
+      <!-- メールアドレス -->
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-mail">メールアドレス</label>
+        <input name="entry.1045781291" class="c-form__input" id="field-mail" type="email" required />
+      </div>
+
+      <!-- お問い合わせ内容 -->
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-message">お問い合わせ内容</label>
+        <textarea name="entry.839337160" class="c-form__input" id="field-message"></textarea>
+      </div>
+
+      <div class="c-form__submit">
+        <button class="contact-submit" type="submit">送信</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  var submitted = false;
+
+  document.querySelector('iframe[name="hidden_iframe"]').onload = function () {
+    if (submitted) {
+      document.querySelector('.c-form').style.display = 'none';
+      document.getElementById('thanksMessage').style.display = 'block';
+    }
+  };
+</script>
+
+    <!-- <section>
       <div id="contact" class="contact">
         <div class="contact_title_container">
           <h2 class="contact_title">お問い合わせ</h2>
@@ -173,8 +254,7 @@
           </div>
         </form>
       </div>
-
-    </section>
+    </section> -->
 
 
   </main>
