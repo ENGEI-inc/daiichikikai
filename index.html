@@ -133,7 +133,9 @@
       </a>
     </section>
 
-<section>
+
+
+    <section>
   <div id="contact" class="contact">
     <div class="contact_title_container">
       <h2 class="contact_title">お問い合わせ</h2>
@@ -144,19 +146,9 @@
       </div>
     </div>
 
-    <!-- 送信完了メッセージ -->
-    <div id="thanksMessage" style="display:none; text-align:center; margin-top:20px;">
-      <p>お問い合わせありがとうございます。<br>送信が完了しました。</p>
-    </div>
-
-    <!-- 非表示iframe -->
-    <iframe name="hidden_iframe" style="display:none;"></iframe>
-
     <form class="c-form"
       action="https://docs.google.com/forms/d/e/1FAIpQLSeQE5_NTffU88JkEVCeybIKC4cgeHe9WdYxZrqN2_KWcDlNjQ/formResponse"
-      method="POST"
-      target="hidden_iframe"
-      onsubmit="submitted=true;">
+      method="POST">
 
       <!-- 氏名（漢字） -->
       <div class="c-form__item">
@@ -201,17 +193,6 @@
     </form>
   </div>
 </section>
-
-<script>
-  var submitted = false;
-
-  document.querySelector('iframe[name="hidden_iframe"]').onload = function () {
-    if (submitted) {
-      document.querySelector('.c-form').style.display = 'none';
-      document.getElementById('thanksMessage').style.display = 'block';
-    }
-  };
-</script>
 
     <!-- <section>
       <div id="contact" class="contact">
